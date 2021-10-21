@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* utility classes */
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main{
+  /* background-color: #f3f4f5; */
+  height: 90vh;
+  max-width: 100vw;
+}
+:root{
+  --main_color:#189cf0;
+}
+
+/* NAVBAR */
+.navbar-brand img{
+  width: 11vw;
+}
+
+/* HOME */
+.home p{
+  font-weight: 800;
+  font-size: 23px;
+  color: #a29bfe;
+  text-transform: uppercase;
+}
+.home h1{
+  font-weight: 800;
+  font-size: 60px;
+}
+.home h2{
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+/* SIGNUP */
+.signup_container{
+  height: 70vh;
+  width: 60vw;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+}
+.signup_form{
+  /* border: solid 2px; */
+  margin: 25px 40px;
+  position: absolute;
+}
+.form_title{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.form-group{
+  /* border: solid 2px blue; */
+  margin: 24px 0;
+}
+
+.form-group input{
+  border-style: none;
+  outline: none;
+  border-bottom: solid 2px rgb(51, 51, 51,0.7);
+  /* width: 40%; */
+  padding: 0 10px;
+  margin: 0 5px;
+  font-weight: 300;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.form-submit{
+  text-transform: capitalize;
+  /* font-weight: 500; */
+  padding: 20px;
+}
+.signup_img{
+  /* border: solid greenyellow; */
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  text-align: center;
+  width:60%;
+}
+.signup_img img{
+  text-align: center;
+  width: 50%;
+  /* height: 30%; */
+  /* transform: translateX(140%); */
+}
+
+
+/* LOGIN */
+.login_container{
+  height: 70vh;
+  width: 60vw;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+}
+.login_img{
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  width:60%;
+  height: 80%;
+  /* border: greenyellow solid; */
+}
+.login_img img{
+  text-align: center;
+  width: 50%;
+  /* height: 30%; */
+  /* transform: translateX(140%); */
+}
+.login_form_container{
+  position: absolute;
+  /* border: solid blue; */
+  left: 60%;
+  height: 100%;
+}
+.login_form_container h2{
+  transform: translateY(100%);
+}
+.login_form{
+  transform: translateY(80%);
+}
+
+
+/* CONTACT */
+.contact_info_item{
+  /* border: solid lightcoral; */
+  width: 30%;
+  height: 100%;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 10px;
+}
+.contact_info_item label{
+  color: #03a9f47d;
+}
+.contact_info{
+  color: #03a9f47d;
+}
+.contact_form_main{
+  /* border: #a29bfe solid; */
+  height: 60vh;
+  width: 80vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+.contact_form_container{
+  /* border: solid pink; */
+  position: relative;
+}
+.contact_form_title{
+  /* position: absolute; */
+  font-size: 40px;
+}
+.contact_form_name input,.contact_form_message{
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: none;
+  /* border-radius: 5px; */
+  /* border: none; */
+}
+.contact_form_message{
+  color: var(--main_color);
+  padding: 5px;
+}
+#contact_form{
+  /* border: solid blue; */
+  margin-top: 10px;
+}
+.contact_submit_button{
+  padding: 08px;
+  background-color: var(--main_color);
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+.contact_submit_button:hover{
+  background-color: #1386bbec;
+}
+
+/* ABOUT */
+.emp_profile{
+  /* border: solid 2px; */
+  height: 80vh;
+  width: 68vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+.emp_profile form:first-child{
+  /* border: #a29bfe solid; */
+  margin: 15px;
+  position:relative; 
+} 
+.user_img{
+  position: absolute;
+  left: 18px;
+  /* border: solid blue; */
+}
+.profile_head h5,h6{
+  text-transform: capitalize;
+}
+.profile_head h6{
+  color: var(--main_color);
+}
+#home-tab{
+  font-weight: 800;
+}
+#profile-tab{
+  font-weight: 800;
+  color: var(--main_color);
+}
+.profile-edit-btn{
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+}
+.profile-work{
+  /* border: solid pink; */
+  position: absolute;
+  bottom:35px;
+  left: 26px;
+}
+.profile-work p{
+  opacity: 0.8;
+}
+.profile-work a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Error Page */
+#notfound{
+  position: relative;
+  height: 80vh;
+}
+#notfound .notfound{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.notfound{
+  max-width: 920px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.notfound .notfound-404{
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.notfound .notfound-404 h1{
+  color: #ececee;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.notfound h2{
+  font-size: 46px;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.notfound p{
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.notfound a{
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--main_color);
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 400;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+.notfound a:hover{
+  background-color: #fff;
+  border-color: var(--main_color);
+  color: var(--main_color);
+}
+@media only screen and(max-width:480px){
+  .notfound .notfound-404 h1{
+    font-size: 162px;
+  }
+  .notfound h2{
+    font-size: 26px;
+  }
+}
