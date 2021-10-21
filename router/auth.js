@@ -6,9 +6,6 @@ const bcrypt=require("bcryptjs");
 const jwt=require("jsonwebtoken");
 const authenticate =require('../middleware/authenticate')
 
-router.get("/", (req, res) => {    //yani agr hum home route p phuche to ky show ho
-    res.send("hello world from the server");
-})
 
 //store user data
 router.post("/register", async (req, res) => {
